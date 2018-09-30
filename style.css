@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(black, white, black);
+}
+
+body>div:nth-child(1){
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60%;
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    border: 4px solid black;
+}
+
+.blocos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 30%;
+    background-color: lightgray;
+    border: 2px solid white;
+    color: white;
+    font-size: 40pt;
+    font-family: "comic sans ms", sans-serif;
+    animation: coresDoBloco 2s linear infinite ;
+}
+
+body>div:nth-child(2){
+    margin: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: coresDoParabens 2s linear infinite;
+    height: 20%;
+    width: 50%;
+    color: white;
+    border: 4px solid black;
+    font-family: "comic sans ms", sans-serif;
+}
+
+@keyframes coresDoParabens{
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: darkblue;
+    }
+    50%{
+        background-color: darkred;
+    }
+    75%{
+        background-color: darkgreen;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+@keyframes coresDoBloco{
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: white;
+    }
+    100%{
+        background-color: black;
+    }
+}

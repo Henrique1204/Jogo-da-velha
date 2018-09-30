@@ -4,18 +4,19 @@ const parabens = document.querySelector("body>div:nth-child(2)");
 let contaCliques = 0;
 
 function clicar (evento){
-    
-    if(evento.target.innerHTML == ""){
-        if(contaCliques % 2 === 0 ){
-            evento.target.innerHTML = "X";
-            evento.target.style.animation = "none";
+    if(parabens.style.visibility !== "visible") {
+        if(evento.target.innerHTML == ""){
+            if(contaCliques % 2 === 0 ){
+                evento.target.innerHTML = "X";
+                evento.target.style.animation = "none";
+            }
+            else if(contaCliques % 2 === 1){
+                evento.target.innerHTML = "O";
+                evento.target.style.animation = "none";
+            }
+            contaCliques++;
+            verificar(evento.target.innerHTML);
         }
-        else if(contaCliques % 2 === 1){
-            evento.target.innerHTML = "O";
-            evento.target.style.animation = "none";
-        }
-        contaCliques++;
-        verificar(evento.target.innerHTML);
     }
 }
 

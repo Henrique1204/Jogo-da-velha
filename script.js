@@ -15,7 +15,7 @@ function clicar (evento){
             evento.target.style.animation = "none";
         }
         contaCliques++;
-        verificar();
+        verificar(evento.target.innerHTML);
     }
 }
 

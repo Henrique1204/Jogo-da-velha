@@ -4,6 +4,7 @@ const parabens = document.querySelector("body>div:nth-child(2)");
 let contaCliques = 0;
 
 function clicar (evento){
+
     if(parabens.style.visibility !== "visible") {
         if(evento.target.innerHTML == ""){
             if(contaCliques % 2 === 0 ){
@@ -22,7 +23,7 @@ function clicar (evento){
 
 function verificar(resultado){
     
-    if(blocos[0].innerHTML == blocos[1].innerHTML && blocos[1].innerHTML == blocos.innerHTML[2] && blocos[0].innerHTML !== "" ||
+    if(blocos[0].innerHTML == blocos[1].innerHTML && blocos[1].innerHTML == blocos[2].innerHTML && blocos[0].innerHTML !== "" ||
     blocos[3].innerHTML == blocos[4].innerHTML && blocos[4].innerHTML == blocos[5].innerHTML && blocos[3].innerHTML !== "" ||
     blocos[6].innerHTML == blocos[7].innerHTML && blocos[7].innerHTML == blocos[8].innerHTML && blocos[6].innerHTML !== "" ||
     blocos[0].innerHTML == blocos[3].innerHTML && blocos[3].innerHTML == blocos[6].innerHTML && blocos[0].innerHTML !== "" ||

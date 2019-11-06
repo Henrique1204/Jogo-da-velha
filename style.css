@@ -9,7 +9,12 @@ body{
     background-image: linear-gradient(black, white, black);
 }
 
-body>div:nth-child(1){
+h1{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+body>div:nth-child(2){
     margin: 0;
     display: flex;
     justify-content: space-around;
@@ -32,25 +37,42 @@ body>div:nth-child(1){
     color: white;
     font-size: 40pt;
     font-family: "comic sans ms", sans-serif;
-    animation: coresDoBloco 2s linear infinite ;
+    animation: coresDoBloco 2s linear infinite;
+    cursor: pointer;
 }
 
-body>div:nth-child(2){
+body>div:nth-child(3){
     margin: 0;
     visibility: hidden;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    animation: coresDoParabens 2s linear infinite;
-    height: 20%;
+    animation: coresDeFimDeJogo 2s linear infinite;
+    height: 10%;
     width: 50%;
     color: white;
     border: 4px solid black;
     font-family: "comic sans ms", sans-serif;
 }
 
-@keyframes coresDoParabens{
+body>div:nth-child(4){
+    margin: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: coresDeFimDeJogo 2s linear infinite;
+    height: 10%;
+    width: 50%;
+    color: white;
+    border: 4px solid black;
+    font-family: "comic sans ms", sans-serif;
+    cursor: pointer;
+}
+
+@keyframes coresDeFimDeJogo{
     0%{
         background-color: black;
     }
